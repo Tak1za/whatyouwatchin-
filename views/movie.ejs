@@ -1,0 +1,22 @@
+<% include partials/header %>
+
+<div id="home-page">
+	<div id="upperFilter">
+		<div class="heading">
+				<%= data2["Title"] %>	
+		</div>
+		<div class="padders show-on-small col-s12"></div>
+		<div class="row">
+			<div id="upperFilterText" class="col s12">
+				<strong><em>Year: </em></strong><%= data2["Year"] %><br>
+				<strong><em>Genre: </em></strong><%= data2["Genre"] %><br>
+				<strong><em>Actors: </em></strong><%= data2["Actors"] %><br>
+				<strong><em>Language: </em></strong><%= data2["Language"] %><br>
+				<strong><em>Runtime:</em> </strong><%= data2["Runtime"] %><br>
+				<strong><em>Plot:</em> </strong><%= data2["Plot"] %>
+			</div>
+		</div>
+	</div>
+</div>
+
+<% include partials/footer %>

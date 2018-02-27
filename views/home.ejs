@@ -1,0 +1,23 @@
+<% include partials/header %>
+
+<div id="landing-page">
+	<div class="heading">
+		What you Watchin'?
+	</div>	
+	<div class="first">
+		<span style="font-size: 1.5em; font-family: 'Lobster', cursive;">
+			Start searching
+		</span>
+		<br>
+		<form method="GET" action="/results">
+			<div class="input-field">
+				<input type="text" id="title" name="search">
+				<label for="title">Title</label>
+			</div>
+			<button type="submit" class="waves-effect waves-light btn red lighten-1" href="/results">Search</button>
+		</form>
+	</div>
+</div>
+
+
+<% include partials/footer %>

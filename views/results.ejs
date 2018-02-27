@@ -1,0 +1,40 @@
+<% include partials/header %>
+
+<div id="main">
+
+<div class="container">
+	<div class="heading" style="padding-bottom: 50px;">
+		Relevant Searches
+	</div>
+	<!-- Creating card for each movie title -->
+	<!-- Creating card for each movie title -->
+<div class="row">
+	<% data["Search"].forEach(function(entry){ %>
+		<div class="col s12 m4 l3">
+			<div class="card">
+				<div class="card-image">
+					<img src="<%= entry['Poster'] %>" class="responsive-img imageCard">						
+				</div>
+				<div class="card-content">
+					<p>
+						Type: <%= entry["Type"] %><br>
+						Year: <%= entry["Year"] %>
+					</p>
+				</div>
+				<div class="middle">
+					<a href="/<%= entry['Title'] %>">
+						<button class="waves-effect red lighten-1 btn" id="click" style="height: auto;">
+							<%= entry["Title"] %>
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>	
+	<% }) %>
+</div>
+</div>
+
+</div>
+
+
+<% include partials/footer %>
